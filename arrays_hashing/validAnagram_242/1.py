@@ -10,7 +10,7 @@ def is_anagram(s: str, t: str):
     print(map)
     for c in t:
         if c in map:
-            map[t] -= 1
+            map[c] -= 1
         else:
             return False
     for val in map.values():
